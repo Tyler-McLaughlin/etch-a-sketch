@@ -1,0 +1,26 @@
+body {
+  background-color: rgba(244, 249, 251, 0.711);
+}
+
+.grid-container {
+  display: flex;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 1em;
+  border: none;
+}
+
+.grid {
+  width: 1em;
+  height: 1em;
+  padding: 4em;
+}
+
+/* .grid:hover {
+  background-color: black;
+} */
