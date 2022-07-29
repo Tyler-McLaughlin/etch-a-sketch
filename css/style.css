@@ -1,26 +1,30 @@
+html,
 body {
   background-color: rgba(244, 249, 251, 0.711);
+  height: 100%;
 }
 
 .grid-container {
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  width: 1em;
-  border: none;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  width: auto;
+  height: auto;
+  border: solid 2px black;
 }
 
 .grid {
-  width: 1em;
-  height: 1em;
-  padding: 4em;
+  padding: 1em;
 }
 
-/* .grid:hover {
+.grid:hover {
   background-color: black;
-} */
+}
